@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climatizador Para Comércios e Mercados · Lion Clima</title>
+<meta name="description" content="Climatizador evaporativo para comércios. Funciona com porta aberta e 90% mais econômico que ar condicionado. Clientes ficam mais tempo e compram mais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+
+:root{--accent:#00AEEF;--accent-dark:#0077B6;--bg-dark:#003E6B;--bg-white:#FFFFFF;--bg-alt:#F0F8FF;--text-primary:#1A1A2E;--text-secondary:#5A6A7A;--border:#D0E8F5;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Montserrat',sans-serif;color:var(--text-primary);background:var(--bg-white);line-height:1.7;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{text-decoration:none;color:inherit;}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;}
+.section-label{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--accent);margin-bottom:12px;display:inline-block;}
+.section-label--white{color:rgba(255,255,255,.7);}
+.section-title{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:16px;}
+.section-subtitle{font-size:1.05rem;color:var(--text-secondary);max-width:700px;line-height:1.7;}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;padding:16px 36px;border:none;border-radius:8px;cursor:pointer;transition:background .3s ease,transform .2s ease,box-shadow .3s ease;box-shadow:0 4px 20px rgba(0,174,239,.3);}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 6px 28px rgba(0,174,239,.45);}
+.btn-primary:active{transform:translateY(0);}
+.animate-on-scroll{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
+.animate-on-scroll.is-visible{opacity:1;transform:translateY(0);}
+.navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:background .35s ease,box-shadow .35s ease,padding .35s ease;}
+.navbar.scrolled{background:var(--bg-dark);box-shadow:0 2px 20px rgba(0,0,0,.25);padding:10px 0;}
+.navbar .container{display:flex;align-items:center;justify-content:space-between;}
+.navbar-logo img{height:28px;width:auto;}
+.navbar-cta{background:var(--accent);color:#fff;font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:700;padding:9px 18px;border-radius:6px;border:none;cursor:pointer;transition:background .3s ease,transform .2s ease;white-space:nowrap;}
+.navbar-cta:hover{background:var(--accent-dark);transform:translateY(-1px);}
+@media(max-width:768px){.navbar-cta{font-size:.7rem;padding:8px 12px;}}
+@media(max-width:400px){.navbar-cta{font-size:.65rem;padding:7px 10px;}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(0,62,107,.55),rgba(0,62,107,.78));z-index:1;}
+.hero-content{position:relative;z-index:2;max-width:860px;padding:120px 24px 80px;}
+.hero h1{font-size:clamp(1.8rem,5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:24px;text-shadow:0 2px 12px rgba(0,0,0,.7);}
+.hero h1 span{color:var(--accent);}
+.hero-sub{font-size:clamp(1rem,2.2vw,1.2rem);opacity:.92;margin-bottom:40px;line-height:1.7;text-shadow:0 1px 8px rgba(0,0,0,.65);}
+.hero .btn-primary{font-size:1.1rem;padding:18px 44px;}
+.hero-badge{margin-top:32px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);border-radius:60px;padding:12px 28px;font-size:.85rem;font-weight:500;color:rgba(255,255,255,.92);}
+.hero-badge span{color:#FFD700;}
+@media(max-width:768px){.hero{background-attachment:scroll!important;}}
+.dor{padding:100px 0;background:var(--bg-white);}
+.dor-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:48px;}
+@media(max-width:768px){.dor-grid{grid-template-columns:1fr;gap:40px;}}
+.dor-list{list-style:none;margin:24px 0;}
+.dor-list li{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:.97rem;color:var(--text-secondary);line-height:1.6;}
+.dor-list li:last-child{border-bottom:none;}
+.dor-list li::before{content:'';display:inline-block;width:18px;height:18px;flex-shrink:0;margin-top:2px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e85d04' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 3z'/%3E%3C/svg%3E") center/contain no-repeat;}
+.dor-img{border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,62,107,.12);}
+.dor-img img{width:100%;height:420px;object-fit:cover;}
+.dor-cta{text-align:center;margin-top:40px;}
+.transformacao{padding:100px 0;background:var(--bg-alt);}
+.transformacao-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:48px;}
+@media(max-width:768px){.transformacao-grid{grid-template-columns:1fr;gap:40px;}}
+.transformacao-img{border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,62,107,.12);}
+.transformacao-img img{width:100%;height:420px;object-fit:cover;}
+.transformacao-text p{font-size:1rem;color:var(--text-secondary);margin-bottom:16px;line-height:1.8;}
+.beneficios{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0;}
+.beneficio-tag{font-size:.82rem;font-weight:600;color:var(--bg-dark);background:var(--bg-white);padding:8px 16px;border-radius:30px;border:1px solid var(--border);}
+.transformacao-cta{text-align:center;margin-top:40px;}
+.prova-section{padding:80px 0;background:var(--bg-dark);color:#fff;text-align:center;}
+.prova-section .section-title{color:#fff;}
+.prova-section .section-subtitle{color:rgba(255,255,255,.75);margin:0 auto 48px;}
+.prova-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:36px;max-width:700px;margin:0 auto 40px;}
+.prova-card p{font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.85);line-height:1.7;margin-bottom:16px;}
+.prova-card cite{font-size:.9rem;color:var(--accent);font-style:normal;font-weight:600;}
+.formulario-section{position:relative;padding:100px 0;color:#fff;background-attachment:scroll;}
+.formulario-section::before{content:'';position:absolute;inset:0;background:rgba(0,62,107,.92);z-index:1;}
+.formulario-section .container{position:relative;z-index:2;}
+.form-header{text-align:center;margin-bottom:48px;}
+.form-header .section-subtitle{color:rgba(255,255,255,.8);margin:0 auto;}
+.form-wrapper{max-width:640px;margin:0 auto;background:rgba(255,255,255,.07);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:40px 36px;}
+@media(max-width:480px){.form-wrapper{padding:28px 20px;}}
+.form-group{margin-bottom:24px;}
+.form-group label{display:block;font-size:.85rem;font-weight:600;margin-bottom:8px;color:rgba(255,255,255,.9);}
+.form-group input[type="text"],.form-group input[type="tel"],.form-group input[type="email"]{width:100%;padding:14px 18px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:500;border:2px solid rgba(255,255,255,.15);border-radius:10px;background:rgba(255,255,255,.08);color:#fff;outline:none;transition:border-color .3s ease,background .3s ease;}
+.form-group input::placeholder{color:rgba(255,255,255,.4);}
+.form-group input:focus{border-color:var(--accent);background:rgba(255,255,255,.12);}
+.checkbox-grid{display:flex;flex-wrap:wrap;gap:10px;}
+.checkbox-item{position:relative;}
+.checkbox-item input[type="checkbox"]{position:absolute;opacity:0;width:0;height:0;}
+.checkbox-item label{display:inline-flex;align-items:center;padding:10px 18px;font-size:.82rem;font-weight:600;border:2px solid rgba(255,255,255,.15);border-radius:30px;cursor:pointer;transition:all .3s ease;color:rgba(255,255,255,.75);margin-bottom:0;}
+.checkbox-item input:checked+label{background:var(--accent);border-color:var(--accent);color:#fff;}
+.checkbox-item label:hover{border-color:var(--accent);color:#fff;}
+.form-submit-btn{width:100%;padding:18px;font-family:'Montserrat',sans-serif;font-size:1.05rem;font-weight:700;background:var(--accent);color:#fff;border:none;border-radius:10px;cursor:pointer;transition:background .3s ease,transform .2s ease;box-shadow:0 4px 20px rgba(0,174,239,.35);}
+.form-submit-btn:hover{background:var(--accent-dark);transform:translateY(-2px);}
+.form-submit-btn:disabled{opacity:.7;cursor:not-allowed;transform:none;}
+.form-disclaimer{text-align:center;margin-top:20px;font-size:.8rem;color:rgba(255,255,255,.55);line-height:1.6;}
+.form-error{color:#ff6b6b;font-size:.8rem;font-weight:500;margin-top:6px;display:none;}
+.form-success{display:none;text-align:center;padding:32px;}
+.form-success.show{display:block;}
+.form-success-icon{font-size:3rem;margin-bottom:16px;}
+.form-success h3{font-size:1.3rem;font-weight:700;margin-bottom:12px;}
+.form-success p{font-size:.95rem;color:rgba(255,255,255,.8);}
+.footer{background:var(--bg-dark);color:rgba(255,255,255,.75);padding:64px 0 0;}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1.5fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1);}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr;gap:32px;}}
+.footer-logo img{max-width:160px;height:auto;display:block;margin-bottom:16px;}
+.footer-col h4{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.45);margin-bottom:16px;}
+.footer-col p{font-size:.85rem;line-height:1.7;margin-bottom:8px;}
+.footer-col a{color:var(--accent);transition:color .3s ease;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{text-align:center;padding:24px 0;font-size:.78rem;color:rgba(255,255,255,.4);}
+
+
+.dor-list li::before{content:'';display:inline-block;width:18px;height:18px;flex-shrink:0;margin-top:2px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e85d04' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 3z'/%3E%3C/svg%3E") center/contain no-repeat;}
+
+</style>
+</head>
+<body data-page="Comercios" data-segmento="Comércio / Mercado">
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-logo">
+      <img src="Lion_Clima_2023_-_Branco.png" alt="Lion Clima" width="auto" height="28">
+    </a>
+    <a href="#formulario" class="navbar-cta">Solicitar Orçamento</a>
+  </div>
+</nav>
+<section class="hero" id="hero" style="background:url('comercio-01.jpg') center/cover no-repeat fixed;">
+  <div class="hero-content">
+    <h1>Climatizador Para Comércios e Mercados: <span>Clientes Que Entram no Frescor</span> Ficam Mais Tempo e Compram Mais</h1>
+    <p class="hero-sub">Funciona com porta aberta e 90% mais econômico que ar condicionado.<br>Ambiente fresco = ticket médio maior e mais indicações espontâneas.</p>
+    <a href="#formulario" class="btn-primary">Solicitar Orçamento →</a>
+    <div class="hero-badge"><span style="display:inline-flex;align-items:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700" stroke="none" style="display:inline-block;vertical-align:middle;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span> Mais de 2.500 ambientes climatizados · Fábrica Própria · Grupo Lion: 30+ anos</div>
+  </div>
+</section>
+
+<section class="dor" id="dor">
+  <div class="container">
+    <div class="dor-grid">
+      <div class="animate-on-scroll">
+        <p class="section-label">O Problema</p>
+        <h2 class="section-title">Clientes Com Calor Compram Rápido e Saem. Clientes Confortáveis Ficam e Enchem o Carrinho.</h2>
+        <p style="color:var(--text-secondary);font-size:1rem;line-height:1.8;margin-bottom:8px;">Nos meses de calor, comércios perdem vendas de forma silenciosa. Clientes entram, sentem o calor e vão embora rápido, às vezes sem comprar nada.</p>
+        <ul class="dor-list"><li>Clientes entram, sentem o calor e saem antes de comprar</li><li>Tempo de permanência cai drasticamente no verão</li><li>Produtos frescos se deterioram mais rápido com o calor</li><li>Funcionários rendem menos e o atendimento piora</li><li>Ar condicionado com porta aberta: ineficaz e conta de luz altíssima</li><li>Concorrente com ambiente fresco passa a ser preferido no bairro</li></ul>
+      </div>
+      <div class="dor-img animate-on-scroll"><img src="comercio-01.jpg" alt="Ambiente com calor" loading="lazy" width="600" height="420"></div>
+    </div>
+    <div class="dor-cta animate-on-scroll"><a href="#formulario" class="btn-primary">Quero Resolver o Calor do Meu Comércio →</a></div>
+  </div>
+</section>
+
+<section class="transformacao" id="transformacao">
+  <div class="container">
+    <div class="transformacao-grid">
+      <div class="transformacao-img animate-on-scroll"><img src="lc-70.jpg" alt="Climatizador Lion Clima" loading="lazy" width="600" height="420"></div>
+      <div class="transformacao-text animate-on-scroll">
+        <p class="section-label">A Solução</p>
+        <h2 class="section-title">Seu Comércio Até 12°C Mais Fresco, Mesmo Com a Porta Aberta</h2>
+        <p>O climatizador evaporativo Lion Clima foi projetado para funcionar exatamente em ambientes de porta aberta, mercados, hortifrútis, lojas, padarias. Sem perda de eficiência com a entrada aberta. Sem tubulação de gás.</p>
+        <p>Clientes comentam o frescor. Funcionários trabalham melhor. E a conta de luz fica até 90% menor do que com ar condicionado convencional.</p>
+        <div class="beneficios"><span class="beneficio-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><polyline points="20 6 9 17 4 12"/></svg> Funciona com porta aberta</span><span class="beneficio-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><polyline points="20 6 9 17 4 12"/></svg> Conserva melhor produtos frescos</span><span class="beneficio-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><polyline points="20 6 9 17 4 12"/></svg> Reduz até 12°C</span><span class="beneficio-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><polyline points="20 6 9 17 4 12"/></svg> 90% mais econômico</span><span class="beneficio-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><polyline points="20 6 9 17 4 12"/></svg> Garantia de 1 ano de fábrica</span></div>
+      </div>
+    </div>
+    <div class="transformacao-cta animate-on-scroll"><a href="#formulario" class="btn-primary">Solicitar Orçamento Para Meu Comércio →</a></div>
+  </div>
+</section>
+
+<section class="prova-section" id="prova">
+  <div class="container">
+    <div class="animate-on-scroll">
+      <p class="section-label section-label--white" style="text-align:center;">Quem Já Instalou</p>
+      <h2 class="section-title" style="text-align:center;">O Que Donos de Comércio Dizem Sobre o Lion Clima</h2>
+    </div>
+    <div class="prova-card animate-on-scroll"><p><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle;margin-right:6px;opacity:.6;color:var(--accent)"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>"Meu movimento aumentou depois que climatizei a loja. Os clientes comentam que é o mercado mais fresco do bairro."</p><cite>Antônio Braga · Proprietário de Mercado · Recife/PE</cite></div>
+    <div style="text-align:center;" class="animate-on-scroll"><a href="#formulario" class="btn-primary">Quero o Mesmo Resultado Para o Meu Comércio →</a></div>
+  </div>
+</section>
+
+
+<section class="formulario-section" id="formulario" style="background:url('comercio-01.jpg') center/cover no-repeat;">
+  <div class="container">
+    <div class="form-header animate-on-scroll">
+      <p class="section-label section-label--white">Orçamento</p>
+      <h2 class="section-title" style="color:#fff;">Solicite Seu Projeto Para Comércio ou Mercado</h2>
+      <p class="section-subtitle">Preencha os dados abaixo. Nosso consultor entra em contato em até 1 dia útil com a recomendação ideal para o seu espaço.</p>
+    </div>
+    <div class="form-wrapper animate-on-scroll">
+      <form id="leadForm" novalidate>
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+          <p class="form-error" id="nome-error">Por favor, informe seu nome completo.</p>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+          <p class="form-error" id="telefone-error">Por favor, informe um telefone válido.</p>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          <p class="form-error" id="email-error">Por favor, informe um e-mail válido.</p>
+        </div>
+        
+        
+        <div class="form-group">
+          <label>Qual o tamanho do seu comércio?</label>
+          <div class="checkbox-grid" id="area-group"><div class="checkbox-item"><input type="checkbox" id="area-0" name="area" value="Até 180 m²"><label for="area-0">Até 180 m²</label></div><div class="checkbox-item"><input type="checkbox" id="area-1" name="area" value="Até 300 m²"><label for="area-1">Até 300 m²</label></div><div class="checkbox-item"><input type="checkbox" id="area-2" name="area" value="Até 420 m²"><label for="area-2">Até 420 m²</label></div><div class="checkbox-item"><input type="checkbox" id="area-3" name="area" value="Acima de 420 m²"><label for="area-3">Acima de 420 m²</label></div></div>
+          <p class="form-error" id="area-error">Selecione ao menos uma opção.</p>
+        </div>
+        <button type="submit" class="form-submit-btn" id="submitBtn">Quero Meu Orçamento Gratuito</button>
+        <div class="form-disclaimer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;opacity:.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Seus dados estão seguros e não serão compartilhados com terceiros.<br>
+          Junte-se a mais de 2.500 clientes que já reduziram até 12°C e economizam 90% na conta de energia.
+        </div>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h3>Recebemos seu contato!</h3>
+        <p>Nosso consultor entrará em contato em até 1 dia útil com a recomendação ideal para o seu comércio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--accent);padding:60px 0;text-align:center;">
+  <div class="container">
+    <h2 style="font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#fff;margin-bottom:12px;line-height:1.25;">Seu comércio climatizado, clientes que ficam mais</h2>
+    <p style="color:rgba(255,255,255,.88);font-size:1.05rem;margin-bottom:32px;">Solicite um orçamento. Nosso consultor responde em até 1 dia útil.</p>
+    <a href="#formulario" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--accent-dark);font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:800;padding:16px 40px;border-radius:8px;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.15);transition:transform .2s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">Solicitar Orçamento →</a>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="Lion_Clima_2023_-_Branco.png" alt="Lion Clima" width="160" height="auto">
+        </div>
+        <p>Lion Clima · Fabricante de Climatizadores Evaporativos</p>
+        <p>Grupo Lion, Mais de 30 anos no mercado</p>
+      </div>
+      <div class="footer-col">
+        <h4>Unidades</h4>
+        <p><strong style="color:#fff;">Matriz:</strong> Vicinal Camilo Sato, Km 2,7 · Valentim Gentil/SP<br>CEP: 15.520-000 · <a href="tel:+551734859080">(17) 3485-9080</a> · <a href="tel:+5517996216060">(17) 99621-6060</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <p>Fixo: <a href="tel:+551734859080">(17) 3485-9080</a></p>
+        <p>Celular: <a href="tel:+5517996216060">(17) 99621-6060</a></p>
+        <p>E-mail: <a href="mailto:contato@lionclima.com.br">contato@lionclima.com.br</a></p>
+        <p>Atendimento: Seg-Qui 8h–18h · Sex 8h–17h</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Lion Clima · CORP LIGHT IND E COM EIRELI · CNPJ: 03.529.804/0001-70 · Todos os direitos reservados
+    </div>
+  </div>
+</footer>
+
+<script>
+
+(function(){
+  var navbar=document.getElementById('navbar');
+  if(!navbar)return;
+  function handleScroll(){
+    if(window.scrollY>80){navbar.classList.add('scrolled');}
+    else{navbar.classList.remove('scrolled');}
+  }
+  window.addEventListener('scroll',handleScroll,{passive:true});
+  handleScroll();
+})();
+
+(function(){
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.animate-on-scroll').forEach(function(el){el.classList.add('is-visible');});
+    return;
+  }
+  var observer=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}
+    });
+  },{threshold:0.05,rootMargin:'0px 0px -20px 0px'});
+  document.querySelectorAll('.animate-on-scroll').forEach(function(el){observer.observe(el);});
+  setTimeout(function(){document.querySelectorAll('.animate-on-scroll').forEach(function(el){el.classList.add('is-visible');});},1500);
+})();
+
+(function(){
+  var tel=document.getElementById('telefone');
+  if(!tel)return;
+  tel.addEventListener('input',function(e){
+    var v=e.target.value.replace(/\D/g,'');
+    if(v.length>11)v=v.slice(0,11);
+    if(v.length>6)v='('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
+    else if(v.length>2)v='('+v.slice(0,2)+') '+v.slice(2);
+    else if(v.length>0)v='('+v;
+    e.target.value=v;
+  });
+})();
+
+(function(){
+  var form=document.getElementById('leadForm');
+  if(!form)return;
+  var submitBtn=document.getElementById('submitBtn');
+  var formSuccess=document.getElementById('formSuccess');
+  var PAGE=document.body.getAttribute('data-page')||'Geral';
+  var SEGMENTO=document.body.getAttribute('data-segmento')||'';
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var valid=true;
+    var errorIds=['nome-error','telefone-error','email-error','area-error'];
+    if(document.getElementById('segmento-error'))errorIds.push('segmento-error');
+    errorIds.forEach(function(id){var el=document.getElementById(id);if(el)el.style.display='none';});
+
+    var nome=document.getElementById('nome').value.trim();
+    if(!nome||nome.length<3){document.getElementById('nome-error').style.display='block';valid=false;}
+
+    var telVal=document.getElementById('telefone').value.replace(/\D/g,'');
+    if(telVal.length<10){document.getElementById('telefone-error').style.display='block';valid=false;}
+
+    var email=document.getElementById('email').value.trim();
+    if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){document.getElementById('email-error').style.display='block';valid=false;}
+
+    var segEl=document.getElementById('segmento-error');
+    var segmentos=document.querySelectorAll('input[name="segmento"]:checked');
+    if(segEl&&segmentos.length===0){segEl.style.display='block';valid=false;}
+
+    var areas=document.querySelectorAll('input[name="area"]:checked');
+    if(areas.length===0){document.getElementById('area-error').style.display='block';valid=false;}
+
+    if(!valid)return;
+
+    submitBtn.disabled=true;
+    submitBtn.textContent='Enviando...';
+
+    var seg=SEGMENTO||Array.from(segmentos).map(function(c){return c.value;}).join(', ');
+    var data={
+      nome:nome,
+      telefone:document.getElementById('telefone').value,
+      email:email,
+      segmento:seg,
+      area:Array.from(areas).map(function(c){return c.value;}).join(', '),
+      pagina:PAGE
+    };
+
+    var webhookUrl='SEU_WEBHOOK_AQUI';
+    fetch(webhookUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+        .then(function(){window.location.href='obrigado.html';})
+        .catch(function(){window.location.href='obrigado.html';});
+  });
+})();
+
+(function(){
+  var faqItems=document.querySelectorAll('.faq-item');
+  if(!faqItems.length)return;
+  function closeAll(){
+    faqItems.forEach(function(item){
+      item.classList.remove('open');
+      var q=item.querySelector('.faq-question');
+      var a=item.querySelector('.faq-answer');
+      if(q)q.setAttribute('aria-expanded','false');
+      if(a)a.style.maxHeight='0px';
+    });
+  }
+  faqItems.forEach(function(item){
+    var question=item.querySelector('.faq-question');
+    var answer=item.querySelector('.faq-answer');
+    if(!question||!answer)return;
+    answer.style.maxHeight='0px';
+    answer.style.overflow='hidden';
+    question.addEventListener('click',function(){
+      var isOpen=item.classList.contains('open');
+      closeAll();
+      if(!isOpen){item.classList.add('open');question.setAttribute('aria-expanded','true');answer.style.maxHeight='600px';}
+    });
+  });
+})();
+
+(function(){
+  var numerosSection=document.getElementById('numeros');
+  if(!numerosSection)return;
+  var animated=false;
+  function easeOut(t){return 1-Math.pow(1-t,3);}
+  function animateCounter(el){
+    var target=parseInt(el.getAttribute('data-target'),10);
+    var prefix=el.getAttribute('data-prefix')||'';
+    var suffix=el.getAttribute('data-suffix')||'';
+    var duration=1800;
+    var startTime=null;
+    function step(ts){
+      if(!startTime)startTime=ts;
+      var progress=Math.min((ts-startTime)/duration,1);
+      var value=Math.floor(easeOut(progress)*target);
+      el.textContent=prefix+value.toLocaleString('pt-BR')+suffix;
+      if(progress<1)requestAnimationFrame(step);
+      else el.textContent=prefix+target.toLocaleString('pt-BR')+suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  function run(){
+    if(animated)return;
+    animated=true;
+    document.querySelectorAll('.numero-value').forEach(function(el){animateCounter(el);});
+  }
+  function inView(){var r=numerosSection.getBoundingClientRect();return r.top<window.innerHeight&&r.bottom>0;}
+  function onScroll(){if(inView()){run();window.removeEventListener('scroll',onScroll);}}
+  window.addEventListener('scroll',onScroll,{passive:true});
+  if(inView())run();
+})();
+
+(function(){
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click',function(e){
+      var target=document.querySelector(this.getAttribute('href'));
+      if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+})();
+
+</script>
+</body>
+</html>

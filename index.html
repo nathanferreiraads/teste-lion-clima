@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lion Clima · Climatizadores Evaporativos Industriais e Comerciais</title>
+<meta name="description" content="Climatizadores evaporativos industriais Lion Clima. Reduza até 12°C a temperatura gastando 90% menos que ar condicionado. Fábrica própria, mais de 2.500 clientes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+
+:root{--accent:#00AEEF;--accent-dark:#0077B6;--bg-dark:#003E6B;--bg-white:#FFFFFF;--bg-alt:#F0F8FF;--text-primary:#1A1A2E;--text-secondary:#5A6A7A;--border:#D0E8F5;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Montserrat',sans-serif;color:var(--text-primary);background:var(--bg-white);line-height:1.7;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{text-decoration:none;color:inherit;}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;}
+.section-label{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--accent);margin-bottom:12px;display:inline-block;}
+.section-label--white{color:rgba(255,255,255,.7);}
+.section-title{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:16px;}
+.section-subtitle{font-size:1.05rem;color:var(--text-secondary);max-width:700px;line-height:1.7;}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;padding:16px 36px;border:none;border-radius:8px;cursor:pointer;transition:background .3s ease,transform .2s ease,box-shadow .3s ease;box-shadow:0 4px 20px rgba(0,174,239,.3);}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 6px 28px rgba(0,174,239,.45);}
+.btn-primary:active{transform:translateY(0);}
+.animate-on-scroll{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
+.animate-on-scroll.is-visible{opacity:1;transform:translateY(0);}
+.navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:background .35s ease,box-shadow .35s ease,padding .35s ease;}
+.navbar.scrolled{background:var(--bg-dark);box-shadow:0 2px 20px rgba(0,0,0,.25);padding:10px 0;}
+.navbar .container{display:flex;align-items:center;justify-content:space-between;}
+.navbar-logo img{height:28px;width:auto;}
+.navbar-cta{background:var(--accent);color:#fff;font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:700;padding:9px 18px;border-radius:6px;border:none;cursor:pointer;transition:background .3s ease,transform .2s ease;white-space:nowrap;}
+.navbar-cta:hover{background:var(--accent-dark);transform:translateY(-1px);}
+@media(max-width:768px){.navbar-cta{font-size:.7rem;padding:8px 12px;}}
+@media(max-width:400px){.navbar-cta{font-size:.65rem;padding:7px 10px;}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(0,62,107,.55),rgba(0,62,107,.78));z-index:1;}
+.hero-content{position:relative;z-index:2;max-width:860px;padding:120px 24px 80px;}
+.hero h1{font-size:clamp(1.8rem,5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:24px;text-shadow:0 2px 12px rgba(0,0,0,.7);}
+.hero h1 span{color:var(--accent);}
+.hero-sub{font-size:clamp(1rem,2.2vw,1.2rem);opacity:.92;margin-bottom:40px;line-height:1.7;text-shadow:0 1px 8px rgba(0,0,0,.65);}
+.hero .btn-primary{font-size:1.1rem;padding:18px 44px;}
+.hero-badge{margin-top:32px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);border-radius:60px;padding:12px 28px;font-size:.85rem;font-weight:500;color:rgba(255,255,255,.92);}
+.hero-badge span{color:#FFD700;}
+@media(max-width:768px){.hero{background-attachment:scroll!important;}}
+.dor{padding:100px 0;background:var(--bg-white);}
+.dor-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:48px;}
+@media(max-width:768px){.dor-grid{grid-template-columns:1fr;gap:40px;}}
+.dor-list{list-style:none;margin:24px 0;}
+.dor-list li{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:.97rem;color:var(--text-secondary);line-height:1.6;}
+.dor-list li:last-child{border-bottom:none;}
+.dor-list li::before{content:'';display:inline-block;width:18px;height:18px;flex-shrink:0;margin-top:2px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e85d04' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 3z'/%3E%3C/svg%3E") center/contain no-repeat;}
+.dor-img{border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,62,107,.12);}
+.dor-img img{width:100%;height:420px;object-fit:cover;}
+.dor-cta{text-align:center;margin-top:40px;}
+.transformacao{padding:100px 0;background:var(--bg-alt);}
+.transformacao-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:48px;}
+@media(max-width:768px){.transformacao-grid{grid-template-columns:1fr;gap:40px;}}
+.transformacao-img{border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,62,107,.12);}
+.transformacao-img img{width:100%;height:420px;object-fit:cover;}
+.transformacao-text p{font-size:1rem;color:var(--text-secondary);margin-bottom:16px;line-height:1.8;}
+.beneficios{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0;}
+.beneficio-tag{font-size:.82rem;font-weight:600;color:var(--bg-dark);background:var(--bg-white);padding:8px 16px;border-radius:30px;border:1px solid var(--border);}
+.transformacao-cta{text-align:center;margin-top:40px;}
+.prova-section{padding:80px 0;background:var(--bg-dark);color:#fff;text-align:center;}
+.prova-section .section-title{color:#fff;}
+.prova-section .section-subtitle{color:rgba(255,255,255,.75);margin:0 auto 48px;}
+.prova-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:36px;max-width:700px;margin:0 auto 40px;}
+.prova-card p{font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.85);line-height:1.7;margin-bottom:16px;}
+.prova-card cite{font-size:.9rem;color:var(--accent);font-style:normal;font-weight:600;}
+.formulario-section{position:relative;padding:100px 0;color:#fff;background-attachment:scroll;}
+.formulario-section::before{content:'';position:absolute;inset:0;background:rgba(0,62,107,.92);z-index:1;}
+.formulario-section .container{position:relative;z-index:2;}
+.form-header{text-align:center;margin-bottom:48px;}
+.form-header .section-subtitle{color:rgba(255,255,255,.8);margin:0 auto;}
+.form-wrapper{max-width:640px;margin:0 auto;background:rgba(255,255,255,.07);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:40px 36px;}
+@media(max-width:480px){.form-wrapper{padding:28px 20px;}}
+.form-group{margin-bottom:24px;}
+.form-group label{display:block;font-size:.85rem;font-weight:600;margin-bottom:8px;color:rgba(255,255,255,.9);}
+.form-group input[type="text"],.form-group input[type="tel"],.form-group input[type="email"]{width:100%;padding:14px 18px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:500;border:2px solid rgba(255,255,255,.15);border-radius:10px;background:rgba(255,255,255,.08);color:#fff;outline:none;transition:border-color .3s ease,background .3s ease;}
+.form-group input::placeholder{color:rgba(255,255,255,.4);}
+.form-group input:focus{border-color:var(--accent);background:rgba(255,255,255,.12);}
+.checkbox-grid{display:flex;flex-wrap:wrap;gap:10px;}
+.checkbox-item{position:relative;}
+.checkbox-item input[type="checkbox"]{position:absolute;opacity:0;width:0;height:0;}
+.checkbox-item label{display:inline-flex;align-items:center;padding:10px 18px;font-size:.82rem;font-weight:600;border:2px solid rgba(255,255,255,.15);border-radius:30px;cursor:pointer;transition:all .3s ease;color:rgba(255,255,255,.75);margin-bottom:0;}
+.checkbox-item input:checked+label{background:var(--accent);border-color:var(--accent);color:#fff;}
+.checkbox-item label:hover{border-color:var(--accent);color:#fff;}
+.form-submit-btn{width:100%;padding:18px;font-family:'Montserrat',sans-serif;font-size:1.05rem;font-weight:700;background:var(--accent);color:#fff;border:none;border-radius:10px;cursor:pointer;transition:background .3s ease,transform .2s ease;box-shadow:0 4px 20px rgba(0,174,239,.35);}
+.form-submit-btn:hover{background:var(--accent-dark);transform:translateY(-2px);}
+.form-submit-btn:disabled{opacity:.7;cursor:not-allowed;transform:none;}
+.form-disclaimer{text-align:center;margin-top:20px;font-size:.8rem;color:rgba(255,255,255,.55);line-height:1.6;}
+.form-error{color:#ff6b6b;font-size:.8rem;font-weight:500;margin-top:6px;display:none;}
+.form-success{display:none;text-align:center;padding:32px;}
+.form-success.show{display:block;}
+.form-success-icon{font-size:3rem;margin-bottom:16px;}
+.form-success h3{font-size:1.3rem;font-weight:700;margin-bottom:12px;}
+.form-success p{font-size:.95rem;color:rgba(255,255,255,.8);}
+.footer{background:var(--bg-dark);color:rgba(255,255,255,.75);padding:64px 0 0;}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1.5fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1);}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr;gap:32px;}}
+.footer-logo img{max-width:160px;height:auto;display:block;margin-bottom:16px;}
+.footer-col h4{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.45);margin-bottom:16px;}
+.footer-col p{font-size:.85rem;line-height:1.7;margin-bottom:8px;}
+.footer-col a{color:var(--accent);transition:color .3s ease;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{text-align:center;padding:24px 0;font-size:.78rem;color:rgba(255,255,255,.4);}
+
+
+.numeros{background:var(--bg-dark);color:#fff;padding:80px 0;text-align:center;}
+.numeros .section-subtitle{color:rgba(255,255,255,.75);margin:0 auto 56px;}
+.numeros-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-bottom:48px;}
+@media(max-width:768px){.numeros-grid{grid-template-columns:repeat(2,1fr);gap:24px;}}
+.numero-card{padding:24px 16px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);}
+.numero-value{font-size:clamp(2.2rem,4vw,3rem);font-weight:800;color:var(--accent);margin-bottom:4px;line-height:1.1;}
+.numero-label{font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:6px;}
+.numero-desc{font-size:.85rem;color:rgba(255,255,255,.55);}
+.numeros-quote{font-style:italic;font-size:1rem;color:rgba(255,255,255,.7);margin-bottom:24px;max-width:700px;margin-left:auto;margin-right:auto;}
+.numeros-pagamentos{font-size:.8rem;color:rgba(255,255,255,.5);font-weight:500;}
+.oque{padding:100px 0;background:var(--bg-white);}
+.oque-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:56px;}
+@media(max-width:768px){.oque-grid{grid-template-columns:1fr;gap:40px;}}
+.oque-text p{font-size:1rem;color:var(--text-secondary);margin-bottom:16px;line-height:1.8;}
+.oque-img{border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,62,107,.12);}
+.oque-img img{width:100%;height:100%;object-fit:cover;}
+.comparison-table{width:100%;border-collapse:collapse;margin:40px 0;font-size:.9rem;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,62,107,.08);}
+.comparison-table thead th{background:var(--bg-dark);color:#fff;padding:16px 14px;text-align:center;font-weight:700;font-size:.85rem;}
+.comparison-table thead th:first-child{text-align:left;width:36%;}
+.comparison-table tbody td{padding:14px;text-align:center;border-bottom:1px solid var(--border);font-weight:500;}
+.comparison-table tbody td:first-child{text-align:left;font-weight:600;color:var(--text-primary);}
+.comparison-table tbody tr:last-child td{border-bottom:none;}
+.comparison-table tbody tr:hover{background:var(--bg-alt);}
+.check{color:#22c55e;display:inline-flex;align-items:center;justify-content:center;}.cross{color:#ef4444;display:inline-flex;align-items:center;justify-content:center;}
+.oque-prova{background:var(--bg-alt);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:24px 28px;margin-top:32px;}
+.oque-prova p{font-style:italic;color:var(--text-secondary);font-size:.95rem;margin-bottom:8px;}
+.oque-prova cite{font-size:.85rem;color:var(--accent-dark);font-style:normal;font-weight:600;}
+.produtos{padding:100px 0;background:var(--bg-alt);}
+.produtos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:32px;}
+@media(max-width:1200px){.produtos-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:480px){.produtos-grid{grid-template-columns:1fr;}}
+.produto-card{background:var(--bg-white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,62,107,.06);border:1px solid var(--border);transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column;}
+.produto-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,62,107,.12);}
+.produto-card-img{height:220px;overflow:hidden;position:relative;}
+.produto-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.produto-card:hover .produto-card-img img{transform:scale(1.05);}
+.produto-tag{position:absolute;top:12px;right:12px;background:var(--accent);color:#fff;font-size:.75rem;font-weight:700;padding:6px 14px;border-radius:30px;}
+.produto-card-body{padding:24px;flex:1;display:flex;flex-direction:column;}
+.produto-card-body h3{font-size:1.4rem;font-weight:800;color:var(--bg-dark);margin-bottom:12px;}
+.produto-spec{font-size:.85rem;color:var(--text-secondary);margin-bottom:4px;}
+.produto-spec strong{color:var(--text-primary);}
+.produto-ideal{margin-top:12px;font-size:.82rem;color:var(--accent-dark);font-weight:500;padding-top:12px;border-top:1px solid var(--border);flex:1;}
+.produto-card .btn-primary{margin-top:16px;width:100%;justify-content:center;font-size:.85rem;padding:12px 20px;}
+.produtos-nota{text-align:center;font-size:.95rem;color:var(--text-secondary);margin-bottom:32px;}
+.produtos-prova{background:var(--bg-white);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:24px 28px;max-width:800px;margin:0 auto;}
+.produtos-prova p{font-style:italic;color:var(--text-secondary);font-size:.95rem;margin-bottom:8px;}
+.produtos-prova cite{font-size:.85rem;color:var(--accent-dark);font-style:normal;font-weight:600;}
+.segmentos{padding:100px 0;background:var(--bg-white);}
+.segmentos-header{text-align:center;margin-bottom:72px;}
+.segmentos-header .section-title span{color:var(--accent);display:block;}
+.segmentos-header p{font-size:1rem;color:var(--text-secondary);margin-top:8px;}
+.segmentos-list{display:flex;flex-direction:column;gap:64px;}
+.segmento-item{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.segmento-item.reverse{direction:rtl;}
+.segmento-item.reverse>*{direction:ltr;}
+@media(max-width:768px){.segmento-item,.segmento-item.reverse{grid-template-columns:1fr;direction:ltr;gap:28px;}}
+.segmento-img{border-radius:20px;overflow:hidden;box-shadow:0 12px 48px rgba(0,62,107,.12);aspect-ratio:4/3;}
+.segmento-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.segmento-item:hover .segmento-img img{transform:scale(1.03);}
+.segmento-body h3{font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:800;color:var(--text-primary);margin-bottom:14px;line-height:1.25;}
+.segmento-body p{font-size:1rem;color:var(--text-secondary);line-height:1.8;margin-bottom:28px;}
+.segmento-body .btn-primary{font-size:.88rem;}
+.diferenciais{background:var(--bg-dark);color:#fff;padding:100px 0;}
+.diferenciais .section-title,.diferenciais .section-subtitle{text-align:center;}
+.diferenciais .section-subtitle{color:rgba(255,255,255,.7);margin:0 auto 56px;}
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;}
+@media(max-width:1200px){.diff-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:480px){.diff-grid{grid-template-columns:1fr;}}
+.diff-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:32px 28px;transition:background .3s ease,transform .3s ease;}
+.diff-card:hover{background:rgba(255,255,255,.1);transform:translateY(-4px);}
+.diff-icon{display:block;margin-bottom:16px;color:var(--accent);}.diff-icon svg{width:40px;height:40px;display:block;}
+.diff-card h3{font-size:1.1rem;font-weight:700;margin-bottom:10px;}
+.diff-card p{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.7;}
+.diff-cta{text-align:center;margin-bottom:40px;}
+.diff-prova{text-align:center;max-width:700px;margin:0 auto;}
+.diff-prova p{font-style:italic;font-size:.95rem;color:rgba(255,255,255,.65);margin-bottom:8px;}
+.diff-prova cite{font-size:.85rem;color:var(--accent);font-style:normal;font-weight:600;}
+.faq{padding:100px 0;background:var(--bg-white);}
+.faq .section-title{text-align:center;margin-bottom:48px;}
+.faq-list{max-width:800px;margin:0 auto;}
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-question{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;font-family:'Montserrat',sans-serif;font-size:.97rem;font-weight:600;color:var(--text-primary);text-align:left;}
+.faq-question:hover{color:var(--accent);}
+.faq-icon{font-size:1.3rem;font-weight:400;flex-shrink:0;transition:transform .3s ease;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-answer{overflow:hidden;transition:max-height .35s ease;max-height:0px;}
+.faq-answer-inner{padding:0 0 20px;font-size:.95rem;color:var(--text-secondary);line-height:1.8;}
+.faq-cta{text-align:center;margin-top:56px;}
+
+</style>
+</head>
+<body data-page="Geral">
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="navbar-logo">
+      <img src="Lion_Clima_2023_-_Branco.png" alt="Lion Clima" width="auto" height="28">
+    </a>
+    <a href="#formulario" class="navbar-cta">Solicitar Orçamento</a>
+  </div>
+</nav>
+<section class="hero" id="hero" style="background:url('hero-principal.jpg') center/cover no-repeat fixed;">
+  <div class="hero-content">
+    <h1>Climatizador Industrial: <span>Reduza até 12°C</span> a Temperatura do Seu Ambiente Gastando <span>90% Menos</span> que Ar Condicionado</h1>
+    <p class="hero-sub">Fábrica própria. Mais de 2.500 ambientes climatizados em todo o Brasil.<br>Sem dutos, instala em horas.</p>
+    <a href="#formulario" class="btn-primary">Solicitar Orçamento →</a>
+    <div class="hero-badge"><span style="display:inline-flex;align-items:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FFD700" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span> Mais de 2.500 clientes atendidos · Grupo Lion: 30+ anos de mercado · Feito no Brasil</div>
+  </div>
+</section>
+
+<section class="numeros" id="numeros">
+  <div class="container">
+    <div class="animate-on-scroll">
+      <p class="section-label section-label--white" style="text-align:center;">Nossos Números</p>
+      <h2 class="section-title" style="color:#fff;text-align:center;">Números que Provam Nossa Entrega</h2>
+      <p class="section-subtitle" style="margin:0 auto 56px;">Não somos revendedores. Somos fabricantes, com estrutura, tecnologia e histórico para atender qualquer projeto.</p>
+    </div>
+    <div class="numeros-grid">
+      <div class="numero-card"><div class="numero-value" data-target="2500" data-prefix="+" data-suffix="">+2.500</div><div class="numero-label">CLIENTES ATENDIDOS</div><div class="numero-desc">Ambientes climatizados em todo o Brasil</div></div>
+      <div class="numero-card"><div class="numero-value" data-target="30" data-prefix="+" data-suffix=" anos">+30 anos</div><div class="numero-label">GRUPO LION</div><div class="numero-desc">Décadas de experiência em climatização</div></div>
+      <div class="numero-card"><div class="numero-value" data-target="300" data-prefix="+" data-suffix="">+300</div><div class="numero-label">EQUIPE</div><div class="numero-desc">Profissionais diretos nas nossas duas fábricas</div></div>
+      <div class="numero-card"><div class="numero-value" data-target="90" data-prefix="até " data-suffix="%">até 90%</div><div class="numero-label">ECONOMIA REAL</div><div class="numero-desc">comparado ao ar-condicionado</div></div>
+    </div>
+    <p class="numeros-quote animate-on-scroll">"Atendemos desde pequenos comércios até grandes indústrias, sempre com o mesmo rigor de fabricante."</p>
+    <p class="numeros-pagamentos animate-on-scroll">Aceitamos: Visa · Mastercard · Elo · Amex · Cartão BNDES · Banco do Brasil · Banco do Nordeste · Losango · Usecorp</p>
+  </div>
+</section>
+
+<section class="oque" id="oque">
+  <div class="container">
+    <div class="oque-grid">
+      <div class="oque-text animate-on-scroll">
+        <p class="section-label">Como Funciona</p>
+        <h2 class="section-title">Não é Ar Condicionado. Não é Ventilador. É Climatização Evaporativa.</h2>
+        <p>O climatizador Lion Clima capta o ar quente externo, passa pela placa evaporativa de 150mm e distribui ar fresco e renovado por todo o ambiente, reduzindo até 12°C com 90% menos gasto de energia.</p>
+        <ul style="list-style:none;margin:20px 0;">
+          <li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:.97rem;color:var(--text-secondary);display:flex;align-items:center;gap:10px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Funciona com portas e janelas abertas</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:.97rem;color:var(--text-secondary);display:flex;align-items:center;gap:10px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Sem dutos, sem gás</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:.97rem;color:var(--text-secondary);display:flex;align-items:center;gap:10px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Ar renovado e umidificado, sem ressecamento</li>
+          <li style="padding:8px 0;font-size:.97rem;color:var(--text-secondary);display:flex;align-items:center;gap:10px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Garantia de 1 ano diretamente de fábrica</li>
+        </ul>
+      </div>
+      <div class="oque-img animate-on-scroll">
+        <img src="produto-02.jpg" alt="Climatizador Evaporativo Lion Clima" loading="lazy" width="600" height="500">
+      </div>
+    </div>
+    <div class="animate-on-scroll" style="overflow-x:auto;">
+      <table class="comparison-table">
+        <thead><tr><th></th><th>Climatizador Lion Clima</th><th>Ar Condicionado</th><th>Ventilador</th></tr></thead>
+        <tbody>
+          <tr><td>Renova o ar</td><td><span class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="cross"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td><td><span class="cross"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td></tr>
+          <tr><td>Umidifica o ar</td><td><span class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="cross"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td><td><span class="cross"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td></tr>
+          <tr><td>Funciona em espaço aberto</td><td><span class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="cross"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td><td><span class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr><td>Reduz a temperatura</td><td><span class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="cross"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td></tr>
+          <tr><td>90% mais econômico que o ar condicionado</td><td><span class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="cross"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td><td><span class="cross"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="text-align:center;margin:40px 0;" class="animate-on-scroll">
+      <a href="#formulario" class="btn-primary">Solicitar Orçamento →</a>
+    </div>
+    <div class="oque-prova animate-on-scroll">
+      <p><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle;margin-right:6px;opacity:.6;color:var(--accent)"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>"A temperatura no salão da nossa igreja caiu quase 10°C. A congregação agora fica até o final do culto sem reclamar do calor."</p>
+      <cite>Pr. Carlos Mendonça · Pastor · Goiânia/GO</cite>
+    </div>
+  </div>
+</section>
+
+<section class="produtos" id="produtos">
+  <div class="container">
+    <div style="text-align:center;" class="animate-on-scroll">
+      <p class="section-label">Linha de Produtos</p>
+      <h2 class="section-title">Um Modelo Para Cada Tamanho de Ambiente</h2>
+      <p class="section-subtitle" style="margin:0 auto 56px;">Da pequena loja ao grande galpão, a Lion Clima tem o equipamento certo para o seu espaço. São 4 tamanhos diferentes para cobrir de 180m² a 600m².</p>
+    </div>
+    <div class="produtos-grid">
+      <div class="produto-card animate-on-scroll">
+        <div class="produto-card-img"><img src="lc-30.jpg" alt="Climatizador LC-30" loading="lazy"><span class="produto-tag">Até 180 m²</span></div>
+        <div class="produto-card-body"><h3>LC-30</h3><p class="produto-spec"><strong>Vazão:</strong> 30.000 m³/h</p><p class="produto-spec"><strong>Motor:</strong> 1,5 cv · Consumo: 1,19 kw/h</p><p class="produto-ideal">Ideal para: Pequenas lojas, capelas, academias pequenas</p><a href="#formulario" class="btn-primary">Solicitar Orçamento</a></div>
+      </div>
+      <div class="produto-card animate-on-scroll">
+        <div class="produto-card-img"><img src="lc-50.jpg" alt="Climatizador LC-50" loading="lazy"><span class="produto-tag">Até 300 m²</span></div>
+        <div class="produto-card-body"><h3>LC-50</h3><p class="produto-spec"><strong>Vazão:</strong> 50.000 m³/h</p><p class="produto-spec"><strong>Motor:</strong> 1,5 cv · Consumo: 1,37 kw/h</p><p class="produto-ideal">Ideal para: Mercados, restaurantes, academias médias, igrejas médias</p><a href="#formulario" class="btn-primary">Solicitar Orçamento</a></div>
+      </div>
+      <div class="produto-card animate-on-scroll">
+        <div class="produto-card-img"><img src="lc-70.jpg" alt="Climatizador LC-70" loading="lazy"><span class="produto-tag">Até 420 m²</span></div>
+        <div class="produto-card-body"><h3>LC-70</h3><p class="produto-spec"><strong>Vazão:</strong> 70.000 m³/h</p><p class="produto-spec"><strong>Motor:</strong> 3 cv · Consumo: 1,8 kw/h</p><p class="produto-ideal">Ideal para: Supermercados, igrejas grandes, oficinas, galpões médios</p><a href="#formulario" class="btn-primary">Solicitar Orçamento</a></div>
+      </div>
+      <div class="produto-card animate-on-scroll">
+        <div class="produto-card-img"><img src="lc-100.jpg" alt="Climatizador LC-100V" loading="lazy"><span class="produto-tag">Até 600 m²</span></div>
+        <div class="produto-card-body"><h3>LC-100V</h3><p class="produto-spec"><strong>Vazão:</strong> 100.000 m³/h</p><p class="produto-spec"><strong>Motor:</strong> 3 cv · Consumo: 2,7 kw/h</p><p class="produto-ideal">Ideal para: Galpões industriais, grandes fábricas, templos de grande porte</p><a href="#formulario" class="btn-primary">Solicitar Orçamento</a></div>
+      </div>
+    </div>
+    <p class="produtos-nota animate-on-scroll">Não tem certeza de qual modelo é o ideal? Preencha o formulário abaixo e nosso consultor indica o projeto certo para o seu espaço.</p>
+    <div class="produtos-prova animate-on-scroll">
+      <p><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle;margin-right:6px;opacity:.6;color:var(--accent)"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>"Colocamos dois LC-100 no galpão de 550m². O ambiente mudou completamente. A produtividade da equipe aumentou de forma visível já nas primeiras semanas."</p>
+      <cite>Roberto Alves · Gerente Industrial · Uberlândia/MG</cite>
+    </div>
+  </div>
+</section>
+
+<section class="segmentos" id="segmentos">
+  <div class="container">
+    <div class="segmentos-header animate-on-scroll">
+      <p class="section-label">Soluções</p>
+      <h2 class="section-title">Soluções sob medida<br><span>para cada necessidade</span></h2>
+      <p>Conheça como o climatizador evaporativo Lion Clima resolve o problema do calor no seu ambiente.</p>
+    </div>
+    <div class="segmentos-list">
+      <div class="segmento-item animate-on-scroll">
+        <div class="segmento-img"><img src="academia-01.jpg" alt="Climatizador para academias" loading="lazy"></div>
+        <div class="segmento-body"><h3>Climatizadores Para Academias</h3><p>Ambiente fresco, alunos que treinam mais, faltam menos e param de reclamar do calor, com até 90% de economia na conta de luz.</p><a href="academias.html" class="btn-primary">Saiba Mais Para Academias →</a></div>
+      </div>
+      <div class="segmento-item reverse animate-on-scroll">
+        <div class="segmento-img"><img src="igreja-01.jpg" alt="Climatizador para igrejas" loading="lazy"></div>
+        <div class="segmento-body"><h3>Climatizadores Para Igrejas e Templos</h3><p>Sua congregação fica até 12°C mais confortável, sem conta de luz pesada, do salão de culto ao templo de grande porte.</p><a href="igrejas.html" class="btn-primary">Saiba Mais Para Igrejas →</a></div>
+      </div>
+      <div class="segmento-item animate-on-scroll">
+        <div class="segmento-img"><img src="galpao-01.jpg" alt="Climatizador para galpões" loading="lazy"></div>
+        <div class="segmento-body"><h3>Climatizadores Para Galpões e Indústrias</h3><p>Ambiente fresco, equipe mais produtiva e até 90% de economia, mesmo com portão aberto, sem dutos.</p><a href="galpoes.html" class="btn-primary">Saiba Mais Para Galpões →</a></div>
+      </div>
+      <div class="segmento-item reverse animate-on-scroll">
+        <div class="segmento-img"><img src="comercio-01.jpg" alt="Climatizador para comércios" loading="lazy"></div>
+        <div class="segmento-body"><h3>Climatizadores Para Comércios e Mercados</h3><p>Clientes que entram no frescor ficam mais tempo e compram mais, funciona com porta aberta e 90% mais econômico.</p><a href="comercios.html" class="btn-primary">Saiba Mais Para Comércios →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="diferenciais" id="diferenciais">
+  <div class="container">
+    <div class="animate-on-scroll">
+      <p class="section-label section-label--white" style="text-align:center;">Por Que Lion Clima</p>
+      <h2 class="section-title" style="text-align:center;">+ de 30 anos de Mercado. Compre com Segurança.</h2>
+      <p class="section-subtitle" style="text-align:center;margin:0 auto 56px;">Conheça os diferenciais que fazem da Lion Clima a escolha certa para o seu projeto.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card animate-on-scroll"><span class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M9 13h.01"/><path d="M15 13h.01"/></svg></span><h3>Fábrica Própria</h3><p>Duas unidades industriais em SP e MS. Mais de 17.000m² de área construída. Controlamos cada etapa da produção.</p></div>
+      <div class="diff-card animate-on-scroll"><span class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></span><h3>100% Nacional</h3><p>Peças, estrutura e tecnologia desenvolvidas no Brasil. Alta resistência para o clima brasileiro.</p></div>
+      <div class="diff-card animate-on-scroll"><span class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><h3>Entrega Para Todo o Brasil</h3><p>Atendemos Centro-Oeste, Sudeste e Nordeste com logística própria e parceiros regionais.</p></div>
+      <div class="diff-card animate-on-scroll"><span class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span><h3>Suporte Técnico</h3><p>Equipe técnica própria e parceiros regionais especializados para garantir o pleno funcionamento do equipamento.</p></div>
+      <div class="diff-card animate-on-scroll"><span class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Garantia de 1 Ano</h3><p>Todos os equipamentos com garantia direta de fábrica. Sem intermediários, sem burocracia.</p></div>
+      <div class="diff-card animate-on-scroll"><span class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg></span><h3>Pagamento Facilitado</h3><p>Parcelamos via Cartão BNDES, Banco do Brasil, Banco do Nordeste e principais bandeiras.</p></div>
+    </div>
+    <div class="diff-cta animate-on-scroll"><a href="#formulario" class="btn-primary">Solicitar Orçamento →</a></div>
+    <div class="diff-prova animate-on-scroll"><p><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle;margin-right:6px;opacity:.6;color:var(--accent)"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>"O diferencial da Lion Clima é ser fábrica. Quando precisei de suporte, resolvi direto com eles, sem intermediários, sem enrolação."</p><cite>Paulo Henrique · Gerente de Compras · Goiânia/GO</cite></div>
+  </div>
+</section>
+
+<section class="formulario-section" id="formulario" style="background:url('comercio-01.jpg') center/cover no-repeat;">
+  <div class="container">
+    <div class="form-header animate-on-scroll">
+      <p class="section-label section-label--white">Orçamento</p>
+      <h2 class="section-title" style="color:#fff;">Solicite Seu Projeto Personalizado</h2>
+      <p class="section-subtitle">Preencha os dados abaixo. Nosso consultor entra em contato em até 1 dia útil com a recomendação ideal para o seu espaço.</p>
+    </div>
+    <div class="form-wrapper animate-on-scroll">
+      <form id="leadForm" novalidate>
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+          <p class="form-error" id="nome-error">Por favor, informe seu nome completo.</p>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+          <p class="form-error" id="telefone-error">Por favor, informe um telefone válido.</p>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          <p class="form-error" id="email-error">Por favor, informe um e-mail válido.</p>
+        </div>
+        
+        <div class="form-group">
+          <label>Para onde precisa de climatizador?</label>
+          <div class="checkbox-grid" id="segmento-group">
+            <div class="checkbox-item"><input type="checkbox" id="seg-academia" name="segmento" value="Academia"><label for="seg-academia">Academia</label></div>
+            <div class="checkbox-item"><input type="checkbox" id="seg-comercio" name="segmento" value="Comércio em geral"><label for="seg-comercio">Comércio em geral</label></div>
+            <div class="checkbox-item"><input type="checkbox" id="seg-galpao" name="segmento" value="Galpão / Indústria"><label for="seg-galpao">Galpão / Indústria</label></div>
+            <div class="checkbox-item"><input type="checkbox" id="seg-mercado" name="segmento" value="Mercado / Hortifrúti"><label for="seg-mercado">Mercado / Hortifrúti</label></div>
+            <div class="checkbox-item"><input type="checkbox" id="seg-outros" name="segmento" value="Outros"><label for="seg-outros">Outros</label></div>
+          </div>
+          <p class="form-error" id="segmento-error">Selecione ao menos uma opção.</p>
+        </div>
+        
+        <div class="form-group">
+          <label>Qual o tamanho do ambiente?</label>
+          <div class="checkbox-grid" id="area-group"><div class="checkbox-item"><input type="checkbox" id="area-0" name="area" value="Até 180 m²"><label for="area-0">Até 180 m²</label></div><div class="checkbox-item"><input type="checkbox" id="area-1" name="area" value="Até 300 m²"><label for="area-1">Até 300 m²</label></div><div class="checkbox-item"><input type="checkbox" id="area-2" name="area" value="Até 420 m²"><label for="area-2">Até 420 m²</label></div><div class="checkbox-item"><input type="checkbox" id="area-3" name="area" value="Até 600 m²"><label for="area-3">Até 600 m²</label></div></div>
+          <p class="form-error" id="area-error">Selecione ao menos uma opção.</p>
+        </div>
+        <button type="submit" class="form-submit-btn" id="submitBtn">Quero Meu Orçamento Gratuito</button>
+        <div class="form-disclaimer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px;opacity:.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Seus dados estão seguros e não serão compartilhados com terceiros.<br>
+          Junte-se a mais de 2.500 clientes que já reduziram até 12°C e economizam 90% na conta de energia.
+        </div>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h3>Recebemos seu contato!</h3>
+        <p>Nosso consultor entrará em contato em até 1 dia útil com a recomendação ideal para o seu espaço.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="animate-on-scroll">
+      <p class="section-label" style="text-align:center;">Dúvidas Frequentes</p>
+      <h2 class="section-title">Perguntas que Todo Cliente Faz Antes de Comprar</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>O climatizador evaporativo é a mesma coisa que ar condicionado?</span><span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Não. São tecnologias completamente diferentes. O ar-condicionado condensa o ar e consome muita energia. O climatizador evaporativo Lion Clima usa o processo natural de evaporação da água para reduzir a temperatura, consumindo até 90% menos energia. Além disso, ele renova o ar constantemente e não resseca o ambiente.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Funciona com portas e janelas abertas?</span><span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Sim, e esse é um dos maiores diferenciais. Ele foi projetado exatamente para esses ambientes: galpões, igrejas, comércios de porta aberta, oficinas e academias. O climatizador Lion Clima funciona melhor com boa circulação de ar externo.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Qual modelo é o ideal para o meu espaço?</span><span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Depende da metragem. A Lion Clima tem 4 modelos: LC-30 (até 180m²), LC-50 (até 300m²), LC-70 (até 420m²) e LC-100V (até 600m²). Para áreas maiores, a solução pode envolver múltiplos equipamentos. Preencha o formulário indicando sua metragem e nosso consultor indica o projeto certo.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Precisa de obra para instalar?</span><span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Na maioria dos casos, precisará de pequenas obras. O equipamento é fixado na parede requer apenas uma tomada 220V. Sem dutos, sem tubulação de gás. A instalação é simples e pode ser feita por eletricista ou técnico local.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Qual é o consumo de energia?</span><span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Muito baixo. O LC-30 consome apenas 1,19 kw/h. O LC-100V, o maior da linha, consome 2,7 kw/h. A economia comparada ao ar-condicionado chega a 90%.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>A Lion Clima entrega em todo o Brasil?</span><span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Sim. Atendemos principalmente Centro-Oeste, Sudeste e Nordeste. Contamos com logística própria e parceiros regionais para entrega e suporte técnico em campo.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Qual é a garantia do produto?</span><span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Todos os equipamentos têm garantia de 1 ano diretamente de fábrica. Sem intermediários.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Posso parcelar a compra?</span><span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Sim. Trabalhamos com Visa, Mastercard, Elo, Amex, Cartão BNDES, Banco do Brasil, Banco do Nordeste, Losango e Usecorp. Para projetos maiores, nosso consultor orienta sobre a melhor forma de financiamento.</div></div></div>
+    </div>
+    <div class="faq-cta animate-on-scroll"><a href="#formulario" class="btn-primary">Solicitar Orçamento →</a></div>
+  </div>
+</section>
+
+<section style="background:var(--accent);padding:60px 0;text-align:center;">
+  <div class="container">
+    <h2 style="font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#fff;margin-bottom:12px;line-height:1.25;">Pronto para climatizar seu espaço?</h2>
+    <p style="color:rgba(255,255,255,.88);font-size:1.05rem;margin-bottom:32px;">Solicite um orçamento. Nosso consultor entra em contato em até 1 dia útil.</p>
+    <a href="#formulario" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--accent-dark);font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:800;padding:16px 40px;border-radius:8px;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.15);transition:transform .2s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">Solicitar Orçamento →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="Lion_Clima_2023_-_Branco.png" alt="Lion Clima" width="160" height="auto">
+        </div>
+        <p>Lion Clima · Fabricante de Climatizadores Evaporativos</p>
+        <p>Grupo Lion, Mais de 30 anos no mercado</p>
+      </div>
+      <div class="footer-col">
+        <h4>Unidades</h4>
+        <p><strong style="color:#fff;">Matriz:</strong> Vicinal Camilo Sato, Km 2,7 · Valentim Gentil/SP<br>CEP: 15.520-000 · <a href="tel:+551734859080">(17) 3485-9080</a> · <a href="tel:+5517996216060">(17) 99621-6060</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <p>Fixo: <a href="tel:+551734859080">(17) 3485-9080</a></p>
+        <p>Celular: <a href="tel:+5517996216060">(17) 99621-6060</a></p>
+        <p>E-mail: <a href="mailto:contato@lionclima.com.br">contato@lionclima.com.br</a></p>
+        <p>Atendimento: Seg-Qui 8h–18h · Sex 8h–17h</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Lion Clima · CORP LIGHT IND E COM EIRELI · CNPJ: 03.529.804/0001-70 · Todos os direitos reservados
+    </div>
+  </div>
+</footer>
+
+<script>
+
+(function(){
+  var navbar=document.getElementById('navbar');
+  if(!navbar)return;
+  function handleScroll(){
+    if(window.scrollY>80){navbar.classList.add('scrolled');}
+    else{navbar.classList.remove('scrolled');}
+  }
+  window.addEventListener('scroll',handleScroll,{passive:true});
+  handleScroll();
+})();
+
+(function(){
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.animate-on-scroll').forEach(function(el){el.classList.add('is-visible');});
+    return;
+  }
+  var observer=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}
+    });
+  },{threshold:0.05,rootMargin:'0px 0px -20px 0px'});
+  document.querySelectorAll('.animate-on-scroll').forEach(function(el){observer.observe(el);});
+  setTimeout(function(){document.querySelectorAll('.animate-on-scroll').forEach(function(el){el.classList.add('is-visible');});},1500);
+})();
+
+(function(){
+  var tel=document.getElementById('telefone');
+  if(!tel)return;
+  tel.addEventListener('input',function(e){
+    var v=e.target.value.replace(/\D/g,'');
+    if(v.length>11)v=v.slice(0,11);
+    if(v.length>6)v='('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
+    else if(v.length>2)v='('+v.slice(0,2)+') '+v.slice(2);
+    else if(v.length>0)v='('+v;
+    e.target.value=v;
+  });
+})();
+
+(function(){
+  var form=document.getElementById('leadForm');
+  if(!form)return;
+  var submitBtn=document.getElementById('submitBtn');
+  var formSuccess=document.getElementById('formSuccess');
+  var PAGE=document.body.getAttribute('data-page')||'Geral';
+  var SEGMENTO=document.body.getAttribute('data-segmento')||'';
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var valid=true;
+    var errorIds=['nome-error','telefone-error','email-error','area-error'];
+    if(document.getElementById('segmento-error'))errorIds.push('segmento-error');
+    errorIds.forEach(function(id){var el=document.getElementById(id);if(el)el.style.display='none';});
+
+    var nome=document.getElementById('nome').value.trim();
+    if(!nome||nome.length<3){document.getElementById('nome-error').style.display='block';valid=false;}
+
+    var telVal=document.getElementById('telefone').value.replace(/\D/g,'');
+    if(telVal.length<10){document.getElementById('telefone-error').style.display='block';valid=false;}
+
+    var email=document.getElementById('email').value.trim();
+    if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){document.getElementById('email-error').style.display='block';valid=false;}
+
+    var segEl=document.getElementById('segmento-error');
+    var segmentos=document.querySelectorAll('input[name="segmento"]:checked');
+    if(segEl&&segmentos.length===0){segEl.style.display='block';valid=false;}
+
+    var areas=document.querySelectorAll('input[name="area"]:checked');
+    if(areas.length===0){document.getElementById('area-error').style.display='block';valid=false;}
+
+    if(!valid)return;
+
+    submitBtn.disabled=true;
+    submitBtn.textContent='Enviando...';
+
+    var seg=SEGMENTO||Array.from(segmentos).map(function(c){return c.value;}).join(', ');
+    var data={
+      nome:nome,
+      telefone:document.getElementById('telefone').value,
+      email:email,
+      segmento:seg,
+      area:Array.from(areas).map(function(c){return c.value;}).join(', '),
+      pagina:PAGE
+    };
+
+    var webhookUrl='SEU_WEBHOOK_AQUI';
+    fetch(webhookUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+    .then(function(){window.location.href='obrigado.html';})
+    .catch(function(){window.location.href='obrigado.html';});
+  });
+})();
+
+(function(){
+  var faqItems=document.querySelectorAll('.faq-item');
+  if(!faqItems.length)return;
+  function closeAll(){
+    faqItems.forEach(function(item){
+      item.classList.remove('open');
+      var q=item.querySelector('.faq-question');
+      var a=item.querySelector('.faq-answer');
+      if(q)q.setAttribute('aria-expanded','false');
+      if(a)a.style.maxHeight='0px';
+    });
+  }
+  faqItems.forEach(function(item){
+    var question=item.querySelector('.faq-question');
+    var answer=item.querySelector('.faq-answer');
+    if(!question||!answer)return;
+    answer.style.maxHeight='0px';
+    answer.style.overflow='hidden';
+    question.addEventListener('click',function(){
+      var isOpen=item.classList.contains('open');
+      closeAll();
+      if(!isOpen){item.classList.add('open');question.setAttribute('aria-expanded','true');answer.style.maxHeight='600px';}
+    });
+  });
+})();
+
+(function(){
+  var numerosSection=document.getElementById('numeros');
+  if(!numerosSection)return;
+  var animated=false;
+  function easeOut(t){return 1-Math.pow(1-t,3);}
+  function animateCounter(el){
+    var target=parseInt(el.getAttribute('data-target'),10);
+    var prefix=el.getAttribute('data-prefix')||'';
+    var suffix=el.getAttribute('data-suffix')||'';
+    var duration=1800;
+    var startTime=null;
+    function step(ts){
+      if(!startTime)startTime=ts;
+      var progress=Math.min((ts-startTime)/duration,1);
+      var value=Math.floor(easeOut(progress)*target);
+      el.textContent=prefix+value.toLocaleString('pt-BR')+suffix;
+      if(progress<1)requestAnimationFrame(step);
+      else el.textContent=prefix+target.toLocaleString('pt-BR')+suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  function run(){
+    if(animated)return;
+    animated=true;
+    document.querySelectorAll('.numero-value').forEach(function(el){animateCounter(el);});
+  }
+  function inView(){var r=numerosSection.getBoundingClientRect();return r.top<window.innerHeight&&r.bottom>0;}
+  function onScroll(){if(inView()){run();window.removeEventListener('scroll',onScroll);}}
+  window.addEventListener('scroll',onScroll,{passive:true});
+  if(inView())run();
+})();
+
+(function(){
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click',function(e){
+      var target=document.querySelector(this.getAttribute('href'));
+      if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+})();
+
+</script>
+</body>
+</html>
